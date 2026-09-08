@@ -1,33 +1,73 @@
 # M365 Admin Playbook
 
-A task-oriented knowledge repository for tested Microsoft 365, Microsoft Entra, Microsoft Graph, Exchange Online, Intune, Azure, PowerShell, and troubleshooting commands.
+Personal Microsoft 365 administration knowledge base containing PowerShell scripts, Microsoft Graph commands, Entra ID labs, Conditional Access scenarios, RBAC experiments, Exchange Online tasks, Intune troubleshooting, and operational notes.
 
-## Safety First
+## Areas Covered
 
-- Run experiments in a demo or approved test tenant.
-- Never commit passwords, access tokens, certificates, tenant exports, user data, or production identifiers.
-- Replace tenant-specific IDs, UPNs, IPs, and SKU IDs with variables before reuse.
-- Start Conditional Access policies in report-only mode, pilot narrowly, and protect emergency-access accounts.
-- Use least privilege and validate both an allowed action and a denied action.
+### Identity & Access
+- Entra ID
+- RBAC
+- PIM
+- Conditional Access
+- MFA
 
-## Repository Layout
+### Licensing
+- Direct licensing
+- Group-based licensing
+- Service plan management
+- License automation
 
-- `Entra-ID/`: users, groups, RBAC, PIM, licensing, and Conditional Access.
-- `Microsoft-Graph/`: authentication, Graph PowerShell, and direct REST patterns.
-- `Exchange-Online/`: connection, mailbox, permission, transport, and trace commands.
-- `Intune/`: Graph-based compliance and app-protection experiments.
-- `Azure/`: Az module setup, connection, context, subscriptions, and RBAC checks.
-- `Troubleshooting/`: real failures, causes, fixes, and validation steps from the lab record.
-- `Templates/`: standard script and notes templates.
-- `Labs/`: six scenario-based lab summaries.
+### Microsoft Graph
+- Authentication
+- User management
+- Group management
+- Application management
+- REST API examples
 
-## Start Here
+### Exchange Online
+- Mailboxes
+- Permissions
+- Mail flow
+- Message tracing
 
-1. Read [COMMAND-INDEX.md](COMMAND-INDEX.md).
-2. Copy [Templates/Script-Template.ps1](Templates/Script-Template.ps1) for a new script.
-3. Put the matching notes file beside the script.
-4. Use descriptive commit messages, for example: `Document delegated license RBAC boundary test`.
+### Intune
+- Device management
+- Compliance policies
+- App deployment
+- Troubleshooting
 
-## Evidence Scope
+### Azure
+- Azure RBAC
+- Resource access
+- Scope & inheritance
 
-This scaffold includes exact commands and command patterns preserved in the supplied learning workbook and master work log. Some historical conversations were summarized rather than preserved command-for-command, so the repository marks reconstructed command families and does not claim missing parameters were executed exactly as shown.
+### Troubleshooting
+- Authorization_RequestDenied
+- Conditional Access issues
+- Licensing problems
+- Graph permission issues
+
+## Repository Structure
+
+```text
+Entra-ID/
+Microsoft-Graph/
+Exchange-Online/
+Intune/
+Azure/
+Troubleshooting/
+Templates/
+Labs/
+```
+
+## Goals
+
+- Build a reusable M365 administration knowledge base
+- Document real-world troubleshooting
+- Store tested PowerShell commands
+- Track hands-on learning and experimentation
+- Maintain production-ready scripts separately from labs
+
+## Author
+
+Bilal Ahmed
