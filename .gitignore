@@ -1,0 +1,35 @@
+# Secrets and credentials
+*.secret
+*.secrets
+*.key
+*.pfx
+*.p12
+*.cer
+*.pem
+.env
+.env.*
+credentials.json
+appsettings.local.json
+
+# PowerShell
+*.clixml
+*.transcript.txt
+*.log
+
+# Exports that may contain tenant or user data
+exports/
+output/
+reports/
+*.csv
+*.json
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+~$*
